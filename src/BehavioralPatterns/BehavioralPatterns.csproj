@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ChainOfResponsibility\" />
+    <Folder Include="Command\" />
+    <Folder Include="Interpreter\" />
+    <Folder Include="Iterator\" />
+    <Folder Include="Mediator\" />
+    <Folder Include="Memento\" />
+    <Folder Include="Observer\" />
+    <Folder Include="State\" />
+    <Folder Include="Strategy\" />
+    <Folder Include="TemplateMethod\" />
+    <Folder Include="Visitor\" />
+  </ItemGroup>
+
+</Project>
