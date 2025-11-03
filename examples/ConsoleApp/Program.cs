@@ -1,5 +1,4 @@
-﻿
-
+﻿using StructuralPatterns.Decorator;
 namespace DesignPatternsConsoleApp;
 
 class Program
@@ -165,7 +164,20 @@ class Program
     static void DemoDecorator()
     {
         PrintHeader("DECORATOR PATTERN");
-        
+        Console.WriteLine("Adds responsibilities to objects dynamically.");
+        Console.WriteLine();
+
+        ICoffee coffee = new BasicCoffee();
+        Console.WriteLine($"{coffee.GetDescription()} - ${coffee.GetCost()}");
+
+        coffee = new MilkDecorator(coffee);
+        Console.WriteLine($"{coffee.GetDescription()} - ${coffee.GetCost()}");
+
+        coffee = new SugarDecorator(coffee);
+        Console.WriteLine($"{coffee.GetDescription()} - ${coffee.GetCost()}");
+
+        coffee = new WhipDecorator(coffee);
+        Console.WriteLine($"{coffee.GetDescription()} - ${coffee.GetCost()}");
 
     }
 
